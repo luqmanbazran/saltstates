@@ -10,7 +10,7 @@ user_lbazran:
       - wheel
 
 lbazran_key:
-  ssh.auth.present:
+  ssh_auth.present:
   - name: lbazran
   - user: lbazran
   - source: salt://users/keys/lbazran.pub

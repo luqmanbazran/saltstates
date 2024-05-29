@@ -10,7 +10,7 @@ user_kat:
       - wheel
 
 kat_key:
-  ssh.auth.present:
+  ssh_auth.present:
   - name: kat
   - user: kat
   - source: salt://users/keys/kat.pub
