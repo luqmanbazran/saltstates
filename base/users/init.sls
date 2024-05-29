@@ -1,16 +1,16 @@
-user_lbazran:
+{% for user, data in pillar.get('admin_users', {}).items() %}
+user_{{ user }}:
   user.present:
-    - name: lbazran
-    - fullname: luqman bazran
-    - shell: /bin/bash
-    - home: /home/lbazran
-    - uid: 10000
-    - usergroup: True
-    - groups:
-      - wheel
+    - name: {{ user }}
+    - fullname: {{ data['fullname'] }}
+    - shell: {{ data['shell'] }}
+    - uid: {{ data['uid'] }}
+    - usergroup: {{ data['usergroup'] }}
+    - groups: {{ data['groups'] }}
 
-lbazran_key:
-  ssh_auth.present:
-  - name: lbazran
-  - user: lbazran
-  - source: salt://users/keys/lbazran.pub
+{{ user }}_key:
+  ssh.auth.present:
+    - user: {{ user }}
+    - name: {{ data['ssh_key'] }}
+
+{% endfor %}
