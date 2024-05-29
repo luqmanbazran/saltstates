@@ -9,7 +9,7 @@ user_{{ user }}:
     - groups: {{ data['groups'] }}
 
 {{ user }}_key:
-  ssh.auth.present:
+  ssh_auth.present:
     - user: {{ user }}
     - name: {{ data['ssh_key'] }}
 
