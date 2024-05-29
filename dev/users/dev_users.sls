@@ -5,7 +5,7 @@ user_kat:
     - shell: /bin/bash
     - home: /home/kat
     - uid: 10001
-    - gid_from_name: True
+    - usergroup: True
     - groups:
       - wheel
 

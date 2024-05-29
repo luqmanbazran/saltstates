@@ -5,7 +5,7 @@ user_lbazran:
     - shell: /bin/bash
     - home: /home/lbazran
     - uid: 10000
-    - gid_from_name: True
+    - usergroup: True
     - groups:
       - wheel
 
