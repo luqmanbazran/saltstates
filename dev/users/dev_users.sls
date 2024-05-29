@@ -9,7 +9,7 @@ user_kat:
     - groups:
       - wheel
 
-lbazran_key:
+kat_key:
   ssh.auth.present:
   - name: kat
   - user: kat
