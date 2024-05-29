@@ -2,6 +2,7 @@ admin_users:
   lbazran:
     fullname: luqman bazran
     shell: /bin/bash
+    home: /home/lbazran
     uid: 10000
     usergroup: True
     groups:
@@ -10,6 +11,7 @@ admin_users:
   kat:
     fullname: kat doug
     shell: /bin/bash
+    home: /home/kat
     uid: 10001
     usergroup: True
     groups:
