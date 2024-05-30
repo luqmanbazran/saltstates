@@ -3,7 +3,7 @@ admin_users:
     fullname: luqman bazran
     shell: /bin/bash
     home: /home/lbazran
-    uid: 1001
+    uid: 10000
     usergroup: True
     groups:
       - wheel
