@@ -3,7 +3,6 @@ user_{{ user }}:
   user.present:
     - name: {{ user }}
     - fullname: {{ data['fullname'] }}
-    - home: {{ data['home'] }}
     - shell: {{ data['shell'] }}
     - uid: {{ data['uid'] }}
     - usergroup: {{ data['usergroup'] }}
